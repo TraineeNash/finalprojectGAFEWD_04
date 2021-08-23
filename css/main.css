@@ -7,6 +7,10 @@ body{
     display: flex;
 }
 
+.grid{
+    display: grid;
+}
+
 .container{
     width: 90%;
     margin: 0 auto;
@@ -80,11 +84,26 @@ header{
     header h1{
         font-size: 1.5em;
     }
+    .banner__content{
+        text-align: center;
+    }
+    .content{
+       display: flex;
+       flex-direction: column-reverse;
+    }
+    .content .history{
+        align-items: center;
+    }
+    .content .history h2{
+        border-bottom: 2px solid red;
+        border-radius: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 /* Home Page */
 .banner{
-    background-image: url("http://placehold.it/400x200");
+    background-image: url("../img/banner-1.png");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -96,5 +115,34 @@ header{
 .banner__content{
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.banner__content h2{
+    border-bottom: 5px double rgb(233, 76, 76);
+    padding: 20px 0;
+}
+
+.banner__content h3{
+    margin: 0;
+    border-bottom: 5px double rgb(233, 76, 76);
+    padding-bottom: 20px;
+}
+
+.content{
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    margin: 50px 0;
+}
+
+.content div img{
+    width: 100%;
+    height: auto;
+}
+
+.history{
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
 }
