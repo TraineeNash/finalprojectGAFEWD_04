@@ -105,6 +105,16 @@ header{
         display: flex;
         flex-direction: column;
     }
+    .contact{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contact .contact__content{
+        text-align: center;
+        border-top: 2px dotted red;
+        border-bottom: 2px dotted red;
+        margin-top: 50px;
+    }
 }
 
 
@@ -177,4 +187,15 @@ footer{
 .menu__page h2{
     border: 2px double red;
     padding: 5px 0;
+}
+
+/* Contact Us Page */
+.contact{
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.contact .flex{
+    flex-direction: column;
 }
