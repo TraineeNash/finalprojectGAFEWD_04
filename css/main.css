@@ -184,6 +184,10 @@ footer{
     gap: 20px;
 }
 
+.menu [class^="item-"] div img{
+    width: 250px;
+}
+
 .menu__page h2{
     border: 2px double red;
     padding: 5px 0;
